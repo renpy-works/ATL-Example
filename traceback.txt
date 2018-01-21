@@ -1,0 +1,58 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+Executing ATL code at game/script.rpy:175
+  File "game/script.rpy", line 181, in script
+    menu:
+  File "game/script.rpy", line 16, in update_with_time_exceed
+    renpy.jump(good_ending)
+NameError: global name 'good_ending' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 181, in script
+    menu:
+  File "C:\Users\TheKing17\renpy\Nova pasta\renpy-6.17.7-sdk\renpy\ast.py", line 1363, in execute
+    choice = renpy.exports.menu(choices, self.set)
+  File "C:\Users\TheKing17\renpy\Nova pasta\renpy-6.17.7-sdk\renpy\exports.py", line 641, in menu
+    rv = renpy.store.menu(items)
+  File "C:\Users\TheKing17\renpy\Nova pasta\renpy-6.17.7-sdk\renpy\exports.py", line 816, in display_menu
+    rv = renpy.ui.interact(mouse='menu', type=type, roll_forward=roll_forward)
+  File "C:\Users\TheKing17\renpy\Nova pasta\renpy-6.17.7-sdk\renpy\ui.py", line 264, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\TheKing17\renpy\Nova pasta\renpy-6.17.7-sdk\renpy\display\core.py", line 2065, in interact
+    repeat, rv = self.interact_core(preloads=preloads, **kwargs)
+  File "C:\Users\TheKing17\renpy\Nova pasta\renpy-6.17.7-sdk\renpy\display\core.py", line 2390, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Users\TheKing17\renpy\Nova pasta\renpy-6.17.7-sdk\renpy\display\core.py", line 1591, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 362, in renpy.display.render.render_screen (gen\renpy.display.render.c:5303)
+  File "render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:2494)
+  File "C:\Users\TheKing17\renpy\Nova pasta\renpy-6.17.7-sdk\renpy\display\layout.py", line 549, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 95, in renpy.display.render.render (gen\renpy.display.render.c:2767)
+  File "render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:2494)
+  File "C:\Users\TheKing17\renpy\Nova pasta\renpy-6.17.7-sdk\renpy\display\layout.py", line 549, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 95, in renpy.display.render.render (gen\renpy.display.render.c:2767)
+  File "render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:2494)
+  File "C:\Users\TheKing17\renpy\Nova pasta\renpy-6.17.7-sdk\renpy\display\layout.py", line 549, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 95, in renpy.display.render.render (gen\renpy.display.render.c:2767)
+  File "render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:2494)
+  File "accelerator.pyx", line 96, in renpy.display.accelerator.transform_render (gen\renpy.display.accelerator.c:1502)
+  File "C:\Users\TheKing17\renpy\Nova pasta\renpy-6.17.7-sdk\renpy\display\motion.py", line 706, in update_state
+    fr = self.function(self, self.st, self.at)
+  File "C:\Users\TheKing17\renpy\Nova pasta\renpy-6.17.7-sdk\renpy\atl.py", line 394, in execute
+    action, arg, pause = self.block.execute(trans, timebase, self.atl_state, event)
+  File "C:\Users\TheKing17\renpy\Nova pasta\renpy-6.17.7-sdk\renpy\atl.py", line 559, in execute
+    action, arg, pause = stmt.execute(trans, target - start, child_state, event)
+  File "C:\Users\TheKing17\renpy\Nova pasta\renpy-6.17.7-sdk\renpy\atl.py", line 1290, in execute
+    fr = self.function(trans, st, trans.at)
+  File "game/script.rpy", line 16, in update_with_time_exceed
+    renpy.jump(good_ending)
+NameError: global name 'good_ending' is not defined
+
+Windows-post2008Server-6.2.9200
+Ren'Py 6.17.7.521
+Teste 0.0
